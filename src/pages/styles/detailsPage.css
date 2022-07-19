@@ -1,86 +1,151 @@
-.mainContainer {
+.container {
+  background: beige;
   display: flex;
-  background: lightgreen;
-  margin-top: 30%;
-  margin-left: 10%;
-  margin-right: 10%;
-  flex-direction: row;
-  /* justify-content: center; */
-  /* align-items: stretch; */
-}
-
-/* Flexbox more pictures elements */
-.morePicturesBox {
-  display: flex;
-  background: yellow;
-  flex-basis: 10%;
-	flex-grow: 0;
-	flex-shrink: 0;
-  order: 1;
-}
-
-
-/* Flexbox main picture elements */
-.pictureBox {
-  flex-basis: 30%;
-	flex-grow: 0;
-	flex-shrink: 0;
-  width: 30%;
-  height: 450px;
-  background: white;
-  order: 2;
-  text-align: center;
-}
-
-.mainImage {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Flexbox extra's (description, price, title etc) */
-.textContainer {
-  display: flex;
-  order: 3;
+  margin-top: 40%;
+  margin-bottom: 555PX;
   flex-direction: column;
 }
 
-.productTitle {
-  order: 1;
-  max-height: 20%;
-  max-width: 100%;
-  padding-bottom: 1%;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  color: #0D134E;
-}
+  .topContainer {
+    order: 1;
+    height: 200px;
+    background: darkblue;
+  }
 
-.productPrice {
-  order: 2;
-  max-height: 10%;
-  max-width: 100%;
-  padding-bottom: 1%;
+  .middleContainer {
+    order: 3;
+    height: 100px;
+    background: darkblue;
+  }
 
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 29px;
-  text-transform: capitalize;
-  color: #151875;
-}
+  .mainContainer {
+    order: 2;
+    height: 450px;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    background: lightgreen;
+    flex-direction: row;
+  }
 
-.productDescription {
-  order: 3;
-  max-height: 30%;
-  max-width: 100%;
+    /* Flexbox more pictures elements */
+    .morePicturesBox {
+      display: flex;
+      background: yellow;
+      flex-basis: 10%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      order: 1;
+    }
 
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 29px;
-  color: #A9ACC6;
-}
+
+    /* Flexbox main picture elements */
+    .pictureBox {
+      flex-basis: 30%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 30%;
+      background: white;
+      order: 2;
+      text-align: center;
+    }
+
+    .mainImage {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Flexbox extra's (description, price, title etc) */
+    .textContainer {
+      padding-left: 10px;
+      display: flex;
+      order: 3;
+      flex-direction: column;
+    }
+
+    .productTitle {
+      order: 1;
+      max-height: 20%;
+      max-width: 100%;
+      padding-bottom: 1%;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #0D134E;
+    }
+
+    .productPrice {
+      order: 2;
+      max-height: 10%;
+      max-width: 100%;
+      padding-bottom: 1%;
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #151875;
+    }
+
+    .productDescription {
+      order: 3;
+      max-height: 30%;
+      max-width: 100%;
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+      color: #A9ACC6;
+    }
+
+  /* Extra information container bottom */
+  .containerBottom {
+    display: flex;
+    background: orange;
+    order: 4;
+    flex-direction: column;
+    height: 640px;
+    width: 100%;
+  }
+
+    .navExtra {
+      display: flex;
+      flex-direction: row;
+      order: 1;
+      padding-top: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 50px;
+      justify-content: flex-start;
+      gap: 100px;
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration-line: underline;
+      color: #151875;
+    }
+  
+    .middleSection {
+      order: 2;
+      background: purple;
+      width: 90%;
+      height: 100PX;
+    }
+
+    .lowerSection {
+      order: 3;
+      background: red;
+      height: 30%;
+      padding-bottom: 50px;
+    }

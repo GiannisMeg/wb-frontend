@@ -20,15 +20,27 @@ export default function DetailsPage() {
   }, [id]);
 
   return (
-    <div className="mainContainer">
-      <div className="morePicturesBox" />
-      <div className="pictureBox">
-        <img src={product.mainImage} className="mainImage" />
+    <div className="container">
+      <div className="topContainer" />
+      <div className="mainContainer">
+        <div className="morePicturesBox" />
+        <div className="pictureBox">
+          <img src={product.mainImage} className="mainImage" />
+        </div>
+        <div className="textContainer">
+          <div className="productTitle">{product.title}</div>
+          <div className="productPrice">€{product.price}</div>
+          <div className="productDescription">{product.description}</div>
+        </div>
       </div>
-      <div className="textContainer">
-        <div className="productTitle">{product.title}</div>
-        <div className="productPrice">€{product.price}</div>
-        <div className="productDescription">{product.description}</div>
+      <div className="middleContainer" />
+      <div className="containerBottom">
+        <div className="navExtra">
+          <div>Description</div>
+          <div>Additional Info</div>
+          <div>Reviews</div>
+        </div>
+        <div></div>
       </div>
     </div>
   );
