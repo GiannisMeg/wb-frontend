@@ -10,7 +10,7 @@ export default function HomePage() {
 
 	return (
 		<div className="container">
-			<p1 className="banner">HomePage</p1>
+			<p className="banner">HomePage</p>
 			<div className="product-card">
 				{products.length !== 0 &&
 					products.map((product) => (
