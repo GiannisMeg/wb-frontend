@@ -1,21 +1,23 @@
 .itemTitle {
   position: absolute;
-  width: 314px;
+  width: 500px;
   height: 43px;
   left: 914px;
-  top: 898px;
+  top: 850px;
+  background: red;
 
   font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
-  text-align: center;
+  text-align: left;
 
   color: #0D134E;
 };
 
-.itemDescription {
+/* .itemDescription {
+  background: yellow;
   position: absolute;
   width: 549px;
   height: 45px;
@@ -27,9 +29,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 29px;
-  /* or 181% */
   color: #A9ACC6;
-}
+} */
 
 .itemPrice {
   position: absolute;
@@ -49,6 +50,10 @@
   color: #151875;
 }
 
+.productPicture {
+  background: #C4C4C4;
+}
+
 .itemMainPic {
   position: absolute;
   width: 375px;
@@ -56,7 +61,7 @@
   left: 497px;
   top: 848px;
 
-  background: url(.jpg), #C4C4C4;
+  /* background: url(.jpg), #C4C4C4; */
   border-radius: 3px;
 }
 
@@ -67,7 +72,7 @@
   left: 325px;
   top: 848px;
 
-  background: url(.jpg), #C4C4C4;
+  /* background: url(.jpg), #C4C4C4; */
   border-radius: 3px;
 }
 
@@ -78,7 +83,7 @@
   left: 325px;
   top: 1014px;
 
-  background: url(.jpg), #C4C4C4;
+  /* background: url(.jpg), #C4C4C4; */
   border-radius: 3px;
 }
 
@@ -89,7 +94,7 @@
   left: 325px;
   top: 1180px;
   
-  background: url(.jpg), #C4C4C4;
+  /* background: url(.jpg), #C4C4C4; */
   border-radius: 3px;
 }
 

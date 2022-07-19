@@ -9,16 +9,16 @@ export default function Navbar() {
 			{" "}
 			<SearchBar />
 			<div className="navbar-list">
-				<text className="brand-name">TheShop</text>
+				<p className="brand-name">TheShop</p>
 				<span className="link-1">
 					<NavLink
 						style={({ isActive }) =>
 							isActive
 								? {
 										color: "white",
-										textDecoration: "none",
+										pDecoration: "none",
 								  }
-								: { fontSize: "larger", textDecoration: "none" }
+								: { fontSize: "larger", pDecoration: "none" }
 						}
 						to="/"
 					>
@@ -29,9 +29,9 @@ export default function Navbar() {
 					<NavLink
 						style={({ isActive }) =>
 							isActive
-								? { color: "white", textDecoration: "none" }
+								? { color: "white", pDecoration: "none" }
 								: {
-										textDecoration: "none",
+										pDecoration: "none",
 								  }
 						}
 						to="/shop"
@@ -43,9 +43,9 @@ export default function Navbar() {
 					<NavLink
 						style={({ isActive }) =>
 							isActive
-								? { color: "white", textDecoration: "none" }
+								? { color: "white", pDecoration: "none" }
 								: {
-										textDecoration: "none",
+										pDecoration: "none",
 								  }
 						}
 						to="/details/1"
