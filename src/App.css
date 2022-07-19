@@ -1,38 +1,87 @@
 .App {
-  text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+	font-size: 34px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	padding-top: 20px;
+	width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+	position: absolute;
+	width: 1926px;
+	height: 555px;
+	left: -7px;
+	top: 2246px;
+	background: #0d0e43;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand-name-footer {
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 16.15%;
+	right: 76.72%;
+	top: 17.86%;
+	bottom: 72.18%;
+
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 38px;
+	line-height: 49px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-categories {
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 40.62%;
+	right: 54.01%;
+	top: 17.67%;
+	bottom: 76.13%;
+
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-account {
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 54.47%;
+	right: 38.79%;
+	top: 17.48%;
+	bottom: 76.32%;
+
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
+}
+
+.footer-follow {
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 67.45%;
+	right: 27.55%;
+	top: 17.29%;
+	bottom: 76.5%;
+	height: 34.426692962646484px;
+	width: 98.2999267578125px;
+	left: 1299px;
+	top: 95.9774169921875px;
+	text-align: left;
+
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
 }

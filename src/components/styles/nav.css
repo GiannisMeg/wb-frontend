@@ -1,0 +1,84 @@
+.navbar {
+	height: 146px;
+	width: 1920px;
+	left: -2px;
+	top: 0px;
+	position: absolute;
+	background-color: #8568ff;
+}
+
+.brand-name {
+	position: absolute;
+	left: 19.23%;
+	right: 74.41%;
+	top: 34.25%;
+	bottom: 33.56%;
+	font-family: "Crimson Text";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 44px;
+}
+
+.link-1 {
+	position: absolute;
+	left: 28.92%;
+	right: 68.84%;
+	top: 43.84%;
+	bottom: 42.47%;
+
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #0d0e43;
+}
+.link-2 {
+	position: absolute;
+	left: 41.58%;
+	right: 56.54%;
+	top: 43.84%;
+	bottom: 42.47%;
+
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #ffffff;
+}
+
+.link-3 {
+	position: absolute;
+	left: 32.99%;
+	right: 63.73%;
+	top: 43.84%;
+	bottom: 42.47%;
+
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #0d0e43;
+}
+
+.input-text {
+	box-sizing: border-box;
+
+	position: absolute;
+	left: 64.04%;
+	right: 19.38%;
+	top: 36.99%;
+	bottom: 33.56%;
+
+	background: #ffffff;
+	border: 2px solid #e7e6ef;
+	border-radius: 8px;
+	height: 43px;
+	width: 318.359619140625px;
+	left: 1229.640380859375px;
+	top: 54px;
+}
