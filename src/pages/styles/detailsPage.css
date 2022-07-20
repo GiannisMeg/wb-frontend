@@ -4,6 +4,7 @@
   margin-top: 40%;
   margin-bottom: 0%;
   flex-direction: column;
+  flex-wrap: "wrap";
 }
 
   .topContainer {
@@ -93,7 +94,7 @@
 
     .productTitle {
       order: 1;
-      max-height: 20%;
+      max-height: 20% 20px;
       max-width: 100%;
       padding-bottom: 1%;
       font-family: 'Lato';
@@ -105,7 +106,7 @@
     }
 
     .productPrice {
-      order: 2;
+      order: 3;
       max-height: 10%;
       max-width: 100%;
       padding-bottom: 1%;
@@ -120,7 +121,7 @@
     }
 
     .productDescription {
-      order: 3;
+      order: 4;
       max-height: 30%;
       max-width: 100%;
       
@@ -133,8 +134,8 @@
     }
 
     .cartButton {
-      max-width: 20%;
-      order: 4;
+      width: 120px;
+      order: 5;
       background: #FF3EB2;
       border-radius: 8px;
 
@@ -149,6 +150,16 @@
       color: #FFFFFF;
     }
 
+    .categories {
+      order: 6;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+      color: #151875;
+    }
+
     /* Extra information container bottom */
   .containerBottom {
     display: flex;
@@ -160,15 +171,14 @@
   }
 
     .navExtra {
+      margin-left: 20%;
+      margin-right: 20%;
       display: flex;
       flex-direction: row;
       order: 1;
       padding-top: 50px;
-      padding-left: 100px;
-      padding-right: 100px;
-      /* padding-bottom: 50px; */
       justify-content: flex-start;
-      gap: 100px;
+      gap: 50px;
 
       font-family: 'Lato';
       font-style: normal;
@@ -177,4 +187,57 @@
       line-height: 29px;
       text-decoration-line: underline;
       color: #151875;
+    }
+
+    .extraText {
+      margin-left: 20%;
+      margin-right: 20%;
+      order: 2;
+      justify-content: flex-start;
+      margin-top: 50px;
+      flex-basis: 30%;
+      gap: 20px;
+    }
+
+    .extraTitleStyle {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: #151875;
+    }
+
+    .extraDescriptionStyle {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 29px;
+      color: #A9ACC6;
+    }
+
+    .star-box {
+      background: white;
+      width: 100px;
+      height: 15px;
+      order: 2;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .full-star {
+      background: gold;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+    }
+
+    .empty-star {
+      background: gray;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      display: inline-block;
+      height: 15px;
+      width: 15px;
     }
