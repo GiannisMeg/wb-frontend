@@ -16,8 +16,10 @@
 }
 
 .c-image {
-	width: 220px;
-	height: 180px;
+	width: 200px;
+	height: 200px;
+	max-width: 200;
+	max-height: 200;
 	border: solid rgb(215, 227, 238);
 	border-inline: none;
 	box-shadow: 0 5px 30px 10px rgba;
