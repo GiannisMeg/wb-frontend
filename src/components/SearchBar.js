@@ -3,9 +3,12 @@
 export default function SearchBar() {
 	return (
 		<div>
-			<div className="input-text">
-				<input type="text" onSubmit={(e) => e.target.value} />
-			</div>
+			<input
+				className="input"
+				placeholder="search"
+				type="text"
+				onSubmit={() => {}}
+			/>
 		</div>
 	);
 }

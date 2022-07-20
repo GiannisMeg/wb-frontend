@@ -15,12 +15,6 @@ function App() {
 					<Route path="/details/:id" element={<DetailsPage />}></Route>
 				</Routes>
 			</main>
-			<div className="footer">
-				<p className="brand-name-footer">TheShop</p>
-				<div className="footer-categories">Categories</div>
-				<div className="footer-account">My account</div>
-				<div className="footer-follow">Follow us</div>
-			</div>
 		</div>
 	);
 }

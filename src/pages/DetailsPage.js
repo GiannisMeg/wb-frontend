@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import "./styles/detailsPage.css";
 
 export default function DetailsPage() {
+
+
   const [product, set_product] = useState([]);
   const id = parseInt(useParams().id);
   console.log(parseInt(id));
