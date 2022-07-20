@@ -1,0 +1,61 @@
+.pd-container {
+	margin-top: 20px;
+	margin-left: 300px;
+	width: 900px;
+	height: 250px;
+	background-color: F5F5F5;
+	padding: 20px;
+	border: 5px;
+	border-radius: 5px;
+	box-shadow: 0 5px 30px 10px rgba(168, 163, 163, 0.4);
+	letter-spacing: 1px;
+}
+
+.card-box {
+	display: flex;
+}
+
+.c-image {
+	width: 220px;
+	height: 180px;
+	border: solid rgb(215, 227, 238);
+	border-inline: none;
+	box-shadow: 0 5px 30px 10px rgba;
+	border-radius: 10px;
+}
+
+.card-info {
+	display: flex;
+}
+
+.c-ul-pd {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.c-ul-info li {
+	display: inline-block;
+}
+
+.c-pd-title {
+	font-size: large;
+	font-weight: bolder;
+	color: #1c5fef;
+	list-style: none;
+}
+
+.c-pd-price {
+	font-weight: bold;
+	color: #1c5fef;
+	list-style: none;
+	padding: 5px;
+	word-spacing: 30px;
+}
+
+.c-pd-description {
+	list-style: none;
+	font-size: small;
+	color: #8c9294;
+}

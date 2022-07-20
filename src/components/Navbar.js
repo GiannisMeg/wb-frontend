@@ -5,54 +5,59 @@ import "./styles/nav.css";
 
 export default function Navbar() {
 	return (
-		<div className="navbar">
+		<div className="nav-box">
 			{" "}
-			<SearchBar />
 			<div className="navbar-list">
-				<text className="brand-name">TheShop</text>
-				<span className="link-1">
-					<NavLink
-						style={({ isActive }) =>
-							isActive
-								? {
-										color: "white",
-										textDecoration: "none",
-								  }
-								: { fontSize: "larger", textDecoration: "none" }
-						}
-						to="/"
-					>
-						Home
-					</NavLink>
+				<span className="c-the">
+					The
+					<span className="c-shop">Shop</span>
 				</span>
-				<span className="link-2">
-					<NavLink
-						style={({ isActive }) =>
-							isActive
-								? { color: "white", textDecoration: "none" }
-								: {
-										textDecoration: "none",
-								  }
-						}
-						to="/shop"
-					>
-						Shop
-					</NavLink>
-				</span>
-				<span className="link-3">
-					<NavLink
-						style={({ isActive }) =>
-							isActive
-								? { color: "white", textDecoration: "none" }
-								: {
-										textDecoration: "none",
-								  }
-						}
-						to="/details/1"
-					>
-						About
-					</NavLink>
-				</span>
+
+				<ul className="ul-links">
+					<li className="link-1">
+						<NavLink
+							style={({ isActive }) =>
+								isActive
+									? {
+											color: "white",
+											textDecoration: "none",
+									  }
+									: { color: "#0d0e43", textDecoration: "none" }
+							}
+							to="/"
+						>
+							Home
+						</NavLink>
+					</li>
+					<li className="link-2">
+						<NavLink
+							style={({ isActive }) =>
+								isActive
+									? { color: "white", textDecoration: "none" }
+									: { color: "#0d0e43", textDecoration: "none" }
+							}
+							to="/shop"
+						>
+							Shop
+						</NavLink>
+					</li>
+					<li className="link-3">
+						<NavLink
+							style={({ isActive }) =>
+								isActive
+									? { color: "white", textDecoration: "none" }
+									: { color: "#0d0e43", textDecoration: "none" }
+							}
+							to="/details/1"
+						>
+							About
+						</NavLink>
+					</li>
+				</ul>
+				<div className="c-search">
+					<SearchBar />
+				</div>
+				<div className="c-box"></div>
 			</div>
 		</div>
 	);

@@ -1,18 +1,26 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
+
+const API_URL = "http://localhost:4000/products";
 
 export default function HomePage() {
 	const [products, set_products] = useState([]);
 
+	const fetchProducts = async () => {
+		const response = await axios.get(API_URL);
+		set_products(response.data);
+		console.log(response.data);
+	};
 	useEffect(() => {
-		set_products([]);
+		fetchProducts();
 	}, []);
 
 	return (
-		<div className="container">
-			<p1 className="banner">HomePage</p1>
-			<div className="product-card">
-				{products.length !== 0 &&
+		<div className="h-container">
+			<ul className="product-card">
+				{products &&
 					products.map((product) => (
 						<ProductCard
 							id={product.id}
@@ -22,10 +30,10 @@ export default function HomePage() {
 							description={product.description}
 							rating={product.rating}
 							mainImage={product.mainImage}
-							category={product.category.title}
 						/>
 					))}
-			</div>
+			</ul>
+			<Footer />
 		</div>
 	);
 }

@@ -1,24 +1,22 @@
-.App {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .banner {
 	font-size: 34px;
 	text-align: center;
 	font-weight: bold;
-	padding: 5px;
-	padding-top: 20px;
 	width: 300px;
 }
 
 .footer {
 	position: absolute;
-	width: 1926px;
-	height: 555px;
-	left: -7px;
-	top: 2246px;
+	width: 100%;
+	height: 300px;
 	background: #0d0e43;
+}
+
+.footer-categories {
+	color: rgba(255, 255, 255, 1);
+	font-size: 24px;
+	width: 45%;
+	display: flex;
 }
 
 .brand-name-footer {
@@ -34,54 +32,4 @@
 	font-weight: 400;
 	font-size: 38px;
 	line-height: 49px;
-}
-
-.footer-categories {
-	color: rgba(255, 255, 255, 1);
-	position: absolute;
-	left: 40.62%;
-	right: 54.01%;
-	top: 17.67%;
-	bottom: 76.13%;
-
-	font-family: "Crimson Text";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 31px;
-}
-
-.footer-account {
-	color: rgba(255, 255, 255, 1);
-	position: absolute;
-	left: 54.47%;
-	right: 38.79%;
-	top: 17.48%;
-	bottom: 76.32%;
-
-	font-family: "Crimson Text";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 31px;
-}
-
-.footer-follow {
-	color: rgba(255, 255, 255, 1);
-	position: absolute;
-	left: 67.45%;
-	right: 27.55%;
-	top: 17.29%;
-	bottom: 76.5%;
-	height: 34.426692962646484px;
-	width: 98.2999267578125px;
-	left: 1299px;
-	top: 95.9774169921875px;
-	text-align: left;
-
-	font-family: "Crimson Text";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 31px;
 }
