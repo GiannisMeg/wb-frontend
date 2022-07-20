@@ -18,9 +18,11 @@ export default function HomePage() {
 	}, []);
 
 	return (
+
 		<div className="h-container">
 			<ul className="product-card">
 				{products &&
+
 					products.map((product) => (
 						<ProductCard
 							id={product.id}
