@@ -1,21 +1,45 @@
 .container {
-  background: beige;
+  background: white;
   display: flex;
   margin-top: 40%;
-  margin-bottom: 555PX;
+  margin-bottom: 0%;
   flex-direction: column;
 }
 
   .topContainer {
     order: 1;
     height: 200px;
-    background: darkblue;
+    background: white;
+    display: flex;
+  }
+
+  .spacer{
+    order: 1;
+    flex-basis: 20%;
+  }
+
+  .rozeText {
+    color: #FB2E86;
+  }
+
+  .routeText {
+    order: 2;
+    flex-basis: 80%;
+    align-self: center;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
   }
 
   .middleContainer {
     order: 3;
     height: 100px;
-    background: darkblue;
+    background: white;
   }
 
   .mainContainer {
@@ -26,14 +50,16 @@
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-    background: lightgreen;
+    background: white;
     flex-direction: row;
   }
+
+/*flexwrap: wrap */
 
     /* Flexbox more pictures elements */
     .morePicturesBox {
       display: flex;
-      background: yellow;
+      background: white;
       flex-basis: 10%;
       flex-grow: 0;
       flex-shrink: 0;
@@ -97,7 +123,7 @@
       order: 3;
       max-height: 30%;
       max-width: 100%;
-
+      
       font-family: 'Lato';
       font-style: normal;
       font-weight: 600;
@@ -106,10 +132,27 @@
       color: #A9ACC6;
     }
 
-  /* Extra information container bottom */
+    .cartButton {
+      max-width: 20%;
+      order: 4;
+      background: #FF3EB2;
+      border-radius: 8px;
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 29px;
+      text-transform: capitalize;
+      text-align: center;
+
+      color: #FFFFFF;
+    }
+
+    /* Extra information container bottom */
   .containerBottom {
     display: flex;
-    background: orange;
+    background: #F9F8FE;
     order: 4;
     flex-direction: column;
     height: 640px;
@@ -123,7 +166,7 @@
       padding-top: 50px;
       padding-left: 100px;
       padding-right: 100px;
-      padding-bottom: 50px;
+      /* padding-bottom: 50px; */
       justify-content: flex-start;
       gap: 100px;
 
@@ -134,18 +177,4 @@
       line-height: 29px;
       text-decoration-line: underline;
       color: #151875;
-    }
-  
-    .middleSection {
-      order: 2;
-      background: purple;
-      width: 90%;
-      height: 100PX;
-    }
-
-    .lowerSection {
-      order: 3;
-      background: red;
-      height: 30%;
-      padding-bottom: 50px;
     }
