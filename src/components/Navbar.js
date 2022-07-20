@@ -25,6 +25,7 @@ export default function Navbar() {
                   : { color: "#0d0e43", textDecoration: "none" }
               }
               to="/"
+              
             >
               Home
             </NavLink>
