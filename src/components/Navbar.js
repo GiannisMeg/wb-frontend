@@ -4,15 +4,14 @@ import SearchBar from "./SearchBar";
 import "./styles/nav.css";
 
 export default function Navbar() {
-	return (
-		<div className="nav-box">
-			{" "}
-			<div className="navbar-list">
-				<span className="c-the">
-					The
-					<span className="c-shop">Shop</span>
-				</span>
-
+  return (
+    <div className="nav-box">
+      {" "}
+      <div className="navbar-list">
+        <span className="c-the">
+          The
+          <span className="c-shop">Shop</span>
+        </span>
 				<ul className="ul-links">
 					<li className="link-1">
 						<NavLink
