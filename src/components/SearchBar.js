@@ -2,7 +2,9 @@
 
 export default function SearchBar() {
 	return (
-		<div>
+		// div relative
+		// icon absolute
+		<div className="c-svg">
 			<input
 				className="input"
 				placeholder="search"
