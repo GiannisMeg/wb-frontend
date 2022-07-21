@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/ProductCard.css";
+import "../pages/styles/detailsPage.css";
 
 export default function ProductCard(props) {
 	return (
@@ -13,7 +14,12 @@ export default function ProductCard(props) {
 					<ul className="c-ul-pd">
 						<li className="c-pd-title">{props.title}</li>
 						<li className="c-pd-price">
-							€{props.price} {props.rating} ⭐️⭐️⭐️⭐️
+							€{props.price} {props.rating} {
+              <>
+              {[...Array(Math.floor(props.rating)).keys()].map(e => <span className="full-star" />)}
+              {[...Array(5 - Math.floor(props.rating)).keys()].map(e => <span className="empty-star" />)}  
+              </>
+            }
 						</li>
 						<li className="c-pd-description">{props.description}</li>
 						<NavLink
