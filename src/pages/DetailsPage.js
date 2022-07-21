@@ -1,11 +1,20 @@
-// import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./styles/detailsPage.css";
 import Footer from "../components/Footer";
 
-export default function DetailsPage() {
+export default function DetailsPage(props) {
+	const navigate = useNavigate();
+
+  useEffect(() => {
+    if (props.jwt === "") {
+      navigate("/users/login");
+    }
+  }, []);
+
+
+  
   const [product, set_product] = useState(null);
   const [category, set_category] = useState([]);
   const id = parseInt(useParams().id);
