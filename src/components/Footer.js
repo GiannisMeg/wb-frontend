@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/footer.css";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
 	return (
@@ -19,7 +20,7 @@ export default function Footer() {
 						<li>Waterproof Headphones</li>
 					</ul>
 					<ul className="f-link-2">
-						My account
+						<NavLink className="navLinker" to="/users/MyAccount">My Account</NavLink>
 						<li>Discount</li>
 						<li>Returns</li>
 						<li>Order History</li>

@@ -1,15 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./styles/loginPage.css";
 import Footer from "../components/Footer";
+import HomePage from "./HomePage";
 
 
 export default function LoginPage (props) {
-  const [email, set_email] = useState(null);
-  const [password, set_password] = useState(null);
-
-  const [jwt, set_jwt] = useState(null);
+  const [email, set_email] = useState("");
+  const [password, set_password] = useState("");
+  const [jwt, set_jwt] = useState("");
+  const navigate = useNavigate();
 
   const submit = (e) => {
     e.preventDefault(); // prevents the form from reloading the page automatically
@@ -18,14 +19,20 @@ export default function LoginPage (props) {
         email: email,
         password: password,
       });
-      props.setToken(theToken.data.jwt)
+      props.setToken(theToken.data.jwt);
+      set_jwt(theToken.data.jwt);
+      const rest = theToken.data.logUser;
+      delete rest.password;
+      props.setUser(rest);
     };
     getToken();
-
-    // if login successfull => clean fields
   }
-
-
+  
+  useEffect(() => {
+    if (jwt) {
+      navigate("/");
+    }
+  }, [jwt]);
 
   return (
     <div>
