@@ -5,9 +5,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	flex-grow: 1;
-	background-color: #130351;
-	padding: 6px 10%;
-	flex-direction: row;
+	background-color: #0d0e43;
+	/* padding: 6px 10%; */
 }
 
 .c-the {
@@ -24,19 +23,45 @@
 	flex-direction: row;
 	font-size: 22px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
-.ul-footer-links li {
+.ul-footer-links ul {
+	margin-top: 50px;
 	display: inline-block;
-	padding: 20px 80px;
+	padding: 10px 60px;
+}
+
+.ul-footer-links {
+	display: flex;
+	margin-bottom: 20px;
 }
 
 .f-link-3,
 .f-link-2,
 .f-link-1 {
-	font-family: "Lato";
-	font-style: 22px;
+	font-family: "crimson style";
+	/* background-color: red;
+	border: solid; */
+	font-size: 24px;
+	font-style: normal;
 	color: #ffffff;
 	list-style: none;
+	margin-bottom: 10px;
+}
+
+.f-link-3 li,
+.f-link-2 li,
+.f-link-1 li {
+	/* background-color: aqua; */
+	margin-top: 20px;
+	font-size: 16px;
+	color: rgba(138, 143, 185, 1);
+	font-family: "sans-serif", sans-serif;
+	padding: 3px;
+}
+
+.f-link-3 li {
+	display: flex;
+	justify-content: space-around;
 }

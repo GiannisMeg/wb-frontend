@@ -2,9 +2,9 @@
 	margin-top: 20px;
 	margin-left: 300px;
 	width: 900px;
-	height: 250px;
+	height: 220px;
 	background-color: F5F5F5;
-	padding: 20px;
+	padding: 10px;
 	border: 5px;
 	border-radius: 5px;
 	box-shadow: 0 5px 30px 10px rgba(168, 163, 163, 0.4);
@@ -16,12 +16,10 @@
 }
 
 .c-image {
-	width: 220px;
-	height: 180px;
-	border: solid rgb(215, 227, 238);
-	border-inline: none;
-	box-shadow: 0 5px 30px 10px rgba;
-	border-radius: 10px;
+	width: 260px;
+	height: 200px;
+	box-shadow: 0 5px 30px 10px rgba(225, 219, 219, 0.4);
+	border-radius: 8px;
 }
 
 .card-info {
@@ -42,13 +40,13 @@
 .c-pd-title {
 	font-size: large;
 	font-weight: bolder;
-	color: #1c5fef;
+	color: #111c85;
 	list-style: none;
 }
 
 .c-pd-price {
 	font-weight: bold;
-	color: #1c5fef;
+	color: #111c85;
 	list-style: none;
 	padding: 5px;
 	word-spacing: 30px;
@@ -58,4 +56,13 @@
 	list-style: none;
 	font-size: small;
 	color: #8c9294;
+}
+
+.c-icons {
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+
+	height: 30px;
+	width: 130px;
 }

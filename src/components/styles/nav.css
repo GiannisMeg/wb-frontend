@@ -33,21 +33,23 @@
 }
 
 .c-box {
-	background-color: rgb(228, 169, 169);
-	height: 30px;
-	width: 100px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	height: 28px;
+	width: 120px;
 }
 
 .link-1 {
 	font-family: "Lato";
-	font-style: normal;
+	font-size: 16px;
 	font-weight: 400;
 	color: #0d0e43;
 	list-style: none;
 }
 .link-2 {
 	font-family: "Lato";
-	font-style: normal;
+	font-size: 16px;
 	font-weight: 400;
 	color: #ffffff;
 	list-style: none;
@@ -55,7 +57,7 @@
 
 .link-3 {
 	font-family: "Lato";
-	font-style: normal;
+	font-size: 16px;
 	font-weight: 400;
 	color: #0d0e43;
 	list-style: none;
@@ -67,5 +69,9 @@
 	border: 2px solid #e7e6ef;
 	border-radius: 5px;
 	height: 30px;
-	width: 200px;
+	width: 220px;
 }
+
+/* FiShoppingCart */
+/* MdOutlineFavoriteBorder */
+/* FaRegUser */
