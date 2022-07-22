@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 // import PriceFilter from "../components/PriceFilter";
 import ProductCard from "../components/ProductCard";
 
 const API_URL = "http://localhost:4000/products";
 const API_URL2 = `http://localhost:4000/products/price/1/1200?range=1&range=150&range=151&range=500&range=501&range=1200`;
+
 
 export default function HomePage() {
 	const [products, set_products] = useState([]); // all products
@@ -15,6 +17,21 @@ export default function HomePage() {
 	const [filtprices1, setfiltPrices1] = useState(true);
 	const [filtprices2, setfiltPrices2] = useState(true);
 	const [filtprices3, setfiltPrices3] = useState(true);
+
+export default function HomePage(props) {
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (props.jwt === "") {
+			navigate("/users/login");
+		}
+	}, []);
+
+
+
+	const [products, set_products] = useState([]);
+	const [price, set_price] = useState([]);
+
 
 	// all products
 	const fetchProducts = async () => {
@@ -37,6 +54,15 @@ export default function HomePage() {
 	// useEffect(() => {
 	// 	getProductsByPrice();
 	// }, []);
+
+	// if (price != []) {
+	// 	const newList = products.map((product) => {
+	// 		if (product.price > laag&& product.price < hoog) {
+	// 			return product;
+	// 		}
+	// 	})
+	// 	set_products(newList);
+	// }
 
 	// const handleChange = async (req,res,next) => {
 	// 	const response = await axios.get(API_URL2);
