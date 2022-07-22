@@ -17,7 +17,6 @@ export default function DetailsPage(props) {
 
   
   const [product, set_product] = useState(null);
-  const [category, set_category] = useState([]);
   const id = parseInt(useParams().id);
 
 

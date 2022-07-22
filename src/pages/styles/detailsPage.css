@@ -1,7 +1,7 @@
 .container {
   background: white;
   display: flex;
-  margin-top: 40%;
+  margin-top: -100px;
   margin-bottom: 0%;
   flex-direction: column;
   flex-wrap: "wrap";

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 // import PriceFilter from "../components/PriceFilter";
 import ProductCard from "../components/ProductCard";
+import '../components/styles/ProductCard.css'
 
 const API_URL = "http://localhost:4000/products";
 const API_URL2 = `http://localhost:4000/products/price/1/1200?range=1&range=150&range=151&range=500&range=501&range=1200`;
@@ -37,37 +38,6 @@ export default function HomePage(props) {
 		fetchProducts();
 	}, [secondPrice]); //
 
-	// if all true 1-2000
-	// const getProductsByPrice = async () => {
-	// 	const response = await axios.get();
-	// 	setfilteredPrices(response.data);
-	// 	console.log(response.data);
-	// };
-	// useEffect(() => {
-	// 	getProductsByPrice();
-	// }, []);
-
-	// if (price != []) {
-	// 	const newList = products.map((product) => {
-	// 		if (product.price > laag&& product.price < hoog) {
-	// 			return product;
-	// 		}
-	// 	})
-	// 	set_products(newList);
-	// }
-
-	// const handleChange = async (req,res,next) => {
-	// 	const response = await axios.get(API_URL2);
-	// 	try {
-	// 		if (){
-	// 			setfiltPrices1()
-	// 		}else{}
-
-	// 	} catch (err) {
-	// 		next(err)
-	// 	}
-
-	// };
 
 	return (
 		<div className="h-container">

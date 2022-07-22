@@ -40,7 +40,7 @@ export default function LoginPage (props) {
             <input type="text" name="email" className="login-form-field" placeholder="Email" onChange={e => set_email(e.target.value)} value={email}/>
             <input type="password" name="password" className="login-form-field" placeholder="Password" onChange={e => set_password(e.target.value)} value={password}/>
             <input type="submit" value="Login" id="login-form-submit"/>
-          </form> 
+          </form>
       <Footer />
     </div>
   )
