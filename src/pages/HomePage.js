@@ -8,8 +8,7 @@ import ProductCard from "../components/ProductCard";
 const API_URL = "http://localhost:4000/products";
 const API_URL2 = `http://localhost:4000/products/price/1/1200?range=1&range=150&range=151&range=500&range=501&range=1200`;
 
-
-export default function HomePage() {
+export default function HomePage(props) {
 	const [products, set_products] = useState([]); // all products
 	const [filtered_prices, setfilteredPrices] = useState([]); // all products filtered
 	const [price, setPrice] = useState("1");
@@ -18,7 +17,6 @@ export default function HomePage() {
 	const [filtprices2, setfiltPrices2] = useState(true);
 	const [filtprices3, setfiltPrices3] = useState(true);
 
-export default function HomePage(props) {
 	const navigate = useNavigate();
 
 	useEffect(() => {
@@ -26,12 +24,6 @@ export default function HomePage(props) {
 			navigate("/users/login");
 		}
 	}, []);
-
-
-
-	const [products, set_products] = useState([]);
-	const [price, set_price] = useState([]);
-
 
 	// all products
 	const fetchProducts = async () => {
