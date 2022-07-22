@@ -66,3 +66,46 @@
 	height: 30px;
 	width: 130px;
 }
+main {
+	margin-top: 430px;
+}
+
+.h-container-upper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.c-checkboxes {
+	display: flex;
+	flex-direction: column;
+	width: 10%;
+	justify-content: start;
+	position: fixed;
+	top: 600px;
+	margin-left: 50px;
+	border: 1px solid;
+	padding: 20px;
+	background-color: #9980fa;
+	border-radius: 10px;
+	font-size: larger;
+	font-weight: 900;
+	padding-top: 40px;
+	color: #fff;
+}
+
+.c-checkboxes div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	flex-direction: row-reverse;
+}
+
+.product-card {
+	width: 88%;
+}
+
+.c-svg svg {
+	position: relative;
+	top: 8px;
+	left: -30px;
+}

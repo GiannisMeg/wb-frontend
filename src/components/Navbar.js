@@ -4,14 +4,14 @@ import SearchBar from "./SearchBar";
 import "./styles/nav.css";
 
 export default function Navbar() {
-  return (
-    <div className="nav-box">
-      {" "}
-      <div className="navbar-list">
-        <span className="c-the">
-          The
-          <span className="c-shop">Shop</span>
-        </span>
+	return (
+		<div className="nav-box">
+			{" "}
+			<div className="navbar-list">
+				<span className="c-the">
+					The
+					<span className="c-shop">Shop</span>
+				</span>
 				<ul className="ul-links">
 					<li className="link-1">
 						<NavLink
@@ -111,6 +111,26 @@ export default function Navbar() {
 							fill="white"
 						/>
 					</svg>
+				</div>
+			</div>
+			<div className="c-navbanner">
+				<div className="c-navbanner-left">
+					Products for every need, at the distance of a click.
+				</div>
+				<div className="c-navbanner-right">
+					<img
+						className="c-img-white left"
+						src="https://i.pinimg.com/originals/f5/05/24/f50524ee5f161f437400aaf215c9e12f.jpg"
+					/>
+					<img
+						className="mainimg"
+						src="https://quemodels.com/_media/buttons/quemodel_female_btn.jpg"
+					/>
+
+					<img
+						className="c-img-white right"
+						src="https://i.pinimg.com/originals/f5/05/24/f50524ee5f161f437400aaf215c9e12f.jpg"
+					/>
 				</div>
 			</div>
 		</div>
